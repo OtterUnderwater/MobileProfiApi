@@ -4,115 +4,132 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingVertical="20dp"
-    android:layout_marginVertical="5dp"
-    android:background="#A6D7ED">
+    android:layout_marginVertical="5dp">
 
-    <TextView
-        android:id="@+id/tName"
-        style="@style/TextTitleH1Style"
-        android:text="Клинический анализ крови с лейкоцитарной формулой"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/textDescription"
-        style="@style/TextTitleH2Style"
-        android:text="Описание"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tName"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/tDescription"
-        style="@style/TextStandartStyle"
-        android:text="Клинический анализ крови – это самое важное комплексное лабораторное исследование при обследовании человека с любым заболеванием. Изменение исследуемых показателей, как правило, происходит задолго до появления видимых симптомов болезни. "
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#4062ADCF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDescription"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textPodgotovka"
-        style="@style/TextTitleH2Style"
-        android:text="Подготовка"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tDescription"
-        tools:ignore="HardcodedText" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp">
 
-    <TextView
-        android:id="@+id/tPodgotovka"
-        style="@style/TextStandartStyle"
-        android:text="Кровь следует сдавать утром натощак, днем или вечером – через 4-5 часов после последнего приема пищи."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPodgotovka"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tName"
+                style="@style/TextTitleH1Style"
+                android:text="Клинический анализ крови с лейкоцитарной формулой"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textResults"
-        style="@style/TextTitleH2Style"
-        android:text="Результаты через: "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tPodgotovka"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textDescription"
+                style="@style/TextTitleH2Style"
+                android:text="Описание"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tName"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/tResults"
-        style="@style/TextStandartStyle"
-        android:text="1 день"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResults"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tDescription"
+                style="@style/TextStandartStyle"
+                android:text="Клинический анализ крови – это самое важное комплексное лабораторное исследование при обследовании человека с любым заболеванием. Изменение исследуемых показателей, как правило, происходит задолго до появления видимых симптомов болезни. "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textDescription"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textBiomaterial"
-        style="@style/TextTitleH2Style"
-        android:text="Биоматериал:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tResults"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textPodgotovka"
+                style="@style/TextTitleH2Style"
+                android:text="Подготовка"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tDescription"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/tBiomaterial"
-        style="@style/TextStandartStyle"
-        android:text="Венозная кровь"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textBiomaterial"
-        tools:ignore="HardcodedText"
-        tools:layout_editor_absoluteX="0dp" />
+            <TextView
+                android:id="@+id/tPodgotovka"
+                style="@style/TextStandartStyle"
+                android:text="Кровь следует сдавать утром натощак, днем или вечером – через 4-5 часов после последнего приема пищи."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPodgotovka"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textCategory"
-        style="@style/TextTitleH2Style"
-        android:text="Категория:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tBiomaterial"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textResults"
+                style="@style/TextTitleH2Style"
+                android:text="Результаты через: "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tPodgotovka"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/tCategory"
-        style="@style/TextStandartStyle"
-        android:text="Таблетки"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCategory"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tResults"
+                style="@style/TextStandartStyle"
+                android:text="1 день"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textResults"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textPrice"
-        style="@style/TextTitleH2Style"
-        android:text="Цена:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tCategory"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/textBiomaterial"
+                style="@style/TextTitleH2Style"
+                android:text="Биоматериал:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tResults"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/tPrice"
-        style="@style/TextStandartStyle"
-        android:text="100 р."
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPrice"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tBiomaterial"
+                style="@style/TextStandartStyle"
+                android:text="Венозная кровь"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textBiomaterial"
+                tools:ignore="HardcodedText"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/textCategory"
+                style="@style/TextTitleH2Style"
+                android:text="Категория:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tBiomaterial"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tCategory"
+                style="@style/TextStandartStyle"
+                android:text="Таблетки"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textCategory"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                style="@style/TextTitleH2Style"
+                android:text="Цена:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tCategory"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tPrice"
+                style="@style/TextStandartStyle"
+                android:text="100 р."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPrice"
+                tools:ignore="HardcodedText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
