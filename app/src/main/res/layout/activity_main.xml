@@ -10,28 +10,23 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/listOrderDetails"
+                android:id="@+id/listCatalogView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginHorizontal="20dp"
-                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="1dp"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 tools:listitem="@layout/item_catalog">
 
             </androidx.recyclerview.widget.RecyclerView>
-
-        </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
 

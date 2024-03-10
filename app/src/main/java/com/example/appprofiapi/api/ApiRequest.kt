@@ -5,6 +5,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface ApiRequest {
-    @GET("/api/catalog")
+    @GET("api/catalog")
     fun getCatalog(): Call<List<Catalog>>
 }
